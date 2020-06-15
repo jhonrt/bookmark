@@ -2,6 +2,10 @@
 @import './header.styl'
 @import './hero.styl'
 @import './features.styl'
+@import './download.styl'
+@import './questions.styl'
+
+
 
 
 
@@ -11,6 +15,7 @@
   --softRed: hsl(0, 94%, 66%)
   --grayishBlue: hsl(229, 8%, 60%)
   --veryDarkBlue: hsl(229, 31%, 21%)
+  --lightGray: #e5e5e5
 
 
 
@@ -32,9 +37,13 @@ ul
   padding: 0 1em
 .u-h1
   font-size: 2em
-  font-weight: 300
+  font-weight: 500
 .u-h2
   @extends .u-h1
+  font-size: 1.5em
+.u-h3
+  margin: 1em 0
+
 .u-p
   color: var(--grayishBlue)
   line-height: 1.7
@@ -55,4 +64,6 @@ ul
   &.is-gray
     color: var( --veryDarkBlue)
     background: #f7f7f7
+  &.is-fullwidth
+    width: 100%
 
